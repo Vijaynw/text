@@ -58,7 +58,7 @@ background-color: var(--one);
 .nav{
   
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   .logo{
@@ -84,19 +84,20 @@ background-color: var(--one);
 .about{
   display: flex;
   flex-direction: column;
+  
   margin-left: 10px;
   // transition: all 1s ease-in;
   .container1{
     font-size: 25px;
   
     // border: 1px solid red;
-    display: flex;
+    // display: flex;
     // flex-direction: column;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    padding: 100px;
-    height: 100vh;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center; 
+    // padding: 100px;  
+    // height: 100vh;
     // border: 1px solid red;  
     a{
       text-decoration:none;
@@ -216,6 +217,7 @@ background-color: var(--one);
     border-radius: 25px;
     a{
       text-decoration: none;
+      
     }
   }
   
@@ -224,11 +226,22 @@ background-color: var(--one);
 .contact{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   height: 50vh;
   align-items: center;
   a{
     // padding: ;
+    display: flex;
+    flex-direction: row;
+    
+    text-decoration: none;
   }
 }
 
+.accent-line {
+  background-image: url("./Component/text-highlight.png");
+  background-position: 0% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 

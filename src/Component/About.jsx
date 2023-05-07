@@ -20,7 +20,7 @@ function About() {
             </strong>
             Along with having a good understanding of the development cycle for
             building a scalable application. <br />
-          <a href="#skills">
+          <a href="#skills" >
             I am holding below skills 
           </a>
           <br />

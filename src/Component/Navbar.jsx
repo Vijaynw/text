@@ -19,7 +19,7 @@ function Navbar() {
 
         <li>🤔Contact</li>
     </Link>
-    <a href="https://drive.google.com/file/d/162MZt3QjBPz7XVczghNLNOQc1-3rI5Gp/view?usp=share_link">
+    <a href="https://drive.google.com/file/d/162MZt3QjBPz7XVczghNLNOQc1-3rI5Gp/view?usp=share_link" target="_blank">
 
         <li>📃Resume</li>
     </a>

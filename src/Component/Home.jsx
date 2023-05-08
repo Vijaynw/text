@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
     <div className='home'>
 
    <h1>
-    <p className='brush'>  Hello World ! 👋</p>
+    <p className='brush accent-line'>  Hello World ! 👋</p>
    </h1>
    <div className="quote">
             <p>“Be yourself; everyone else is already taken.” <br />
@@ -14,8 +14,10 @@ function Home() {
             </p>
         </div>
         <button>
+<Link to='about'>
 
-        <a href="/about">Hit to know more 🎯</a>
+      Hit to know more 🎯
+</Link>
         </button>
     </div>
     </>

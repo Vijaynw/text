@@ -20,7 +20,7 @@ function About() {
             </strong>
             Along with having a good understanding of the development cycle for
             building a scalable application. <br />
-          <a href="#skills">
+          <a href="#skills" >
             I am holding below skills 
           </a>
           <br />
@@ -40,15 +40,9 @@ function About() {
     <div>
         <h1>Work 🏢</h1>
         <div className="experience">
-            <h5>I&C</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
+            <h5>Implementation & Conversion Analyst br -Front-end Developer <br /> 2022-present</h5>
+            <h5>IT Trainee <br /> 2021-2022</h5>
+            
 
         </div>
     </div>

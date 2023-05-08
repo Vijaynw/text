@@ -40,15 +40,9 @@ function About() {
     <div>
         <h1>Work 🏢</h1>
         <div className="experience">
-            <h5>I&C</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
-            <h5>IT Trainee</h5>
+            <h5>Implementation & Conversion Analyst br -Front-end Developer <br /> 2022-present</h5>
+            <h5>IT Trainee <br /> 2021-2022</h5>
+            
 
         </div>
     </div>

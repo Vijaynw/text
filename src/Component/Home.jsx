@@ -14,8 +14,10 @@ function Home() {
             </p>
         </div>
         <button>
+<Link to='about'>
 
-        <a href="/about">Hit to know more 🎯</a>
+      Hit to know more 🎯
+</Link>
         </button>
     </div>
     </>

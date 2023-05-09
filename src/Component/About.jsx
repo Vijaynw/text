@@ -5,6 +5,8 @@ import scsslogo from "../Component/scss.png";
 import bootstraplogo from "../Component/bootstrap.png";
 import routerlogo from "../Component/react-router-mark-color.png";
 import reduxlogo from "../Component/redux.png";
+import sql from "../Component/sql.png";
+
 const color = {
   color:"#146c94"
 }
@@ -23,7 +25,7 @@ function About() {
             </span>
             Along with having a good understanding of the development cycle for
             building a scalable application. <br />
-          <a href="#skills" >
+          <a href="#skills" > 
             I am holding below skills <sup>🎯</sup>
           </a>
           <br />
@@ -82,7 +84,7 @@ function About() {
           <div className="Databases">
             <p>
               Databases :  <br />
-              <img src={reactlogo} alt="" />
+              <img src={sql} alt="" />
             </p>
           </div>
 

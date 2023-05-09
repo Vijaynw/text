@@ -5,6 +5,11 @@ import scsslogo from "../Component/scss.png";
 import bootstraplogo from "../Component/bootstrap.png";
 import routerlogo from "../Component/react-router-mark-color.png";
 import reduxlogo from "../Component/redux.png";
+import sql from "../Component/sql.png";
+
+const color = {
+  color:"#146c94"
+}
 
 function About() {
   return (
@@ -13,15 +18,15 @@ function About() {
         <div className="container1">
           <p>
             Hi There 🙋‍♂️,
-            <br /> <br /> Myself Vijay Hope your are doing well ❕ <br />I am a
+            <br /> <br /> Myself  <span style={color}>Vijay</span>  Hope your are doing well ❕ <br />I am a
             passionate web developer with over 1.9 years of  experience in{" "}
-            <strong>
+            <span style={color}>
               Web Development <span>Environment</span>{" "}
-            </strong>
+            </span>
             Along with having a good understanding of the development cycle for
             building a scalable application. <br />
-          <a href="#skills" >
-            I am holding below skills 
+          <a href="#skills" > 
+            I am holding below skills <sup>🎯</sup>
           </a>
           <br />
             <br />
@@ -79,7 +84,7 @@ function About() {
           <div className="Databases">
             <p>
               Databases :  <br />
-              <img src={reactlogo} alt="" />
+              <img src={sql} alt="" />
             </p>
           </div>
 
@@ -93,7 +98,7 @@ function About() {
             </p>
           </div>
         </div>
-        <p>
+        {/* <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
           debitis architecto tempora illo voluptatibus voluptates cupiditate
           laudantium. Voluptate optio eius pariatur provident iure
@@ -107,7 +112,7 @@ function About() {
           excepturi inventore in voluptas dicta, harum veniam commodi
           accusantium nesciunt. Ab omnis nesciunt sapiente ducimus soluta
           cupiditate?
-        </p>
+        </p> */}
         {/* <div id='para' className="para">
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error inventore accusantium exercitationem cumque est non veritatis animi. Odit neque dolorem modi quia nesciunt maxime eum assumenda recusandae voluptates. Cum eos accusantium incidunt omnis rerum iste assumenda excepturi eveniet facilis quas suscipit exercitationem, accusamus aliquam doloribus id laudantium amet commodi fugit sequi sed, labore illo deserunt ipsa enim? Voluptatibus eius officiis velit tenetur! Laboriosam dolore atque saepe molestiae debitis voluptas ex, reiciendis architecto corporis tempora quisquam quis odit expedita! Illum, quod labore voluptate consectetur quisquam ipsam ex ab est eum eos id? Ullam saepe quo labore recusandae omnis, unde quaerat impedit.</p>

@@ -38,18 +38,20 @@ function About() {
           </a> */}
 <div className="exp" id="exp">
     <div>
-        <h1>Work 🏢</h1>
+        <h1 className="accent-line">Work 🏢</h1>
         <div className="experience">
-            <h5>Implementation & Conversion Analyst br -Front-end Developer <br /> 2022-present</h5>
-            <h5>IT Trainee <br /> 2021-2022</h5>
+            <h5>Implementation & Conversion Analyst -- Front-end Developer 👨 <br />  Jan/2022  -  Present</h5> 
+            <h5>⬆️</h5>
+            <h5>⬆️</h5>
+            <h5>IT Trainee 👦 <br /> Aug/2021 - Aug/2022</h5>
             
 
         </div>
     </div>
 </div>
 
-        <div id="skills" className="skills">
-          <h1>Skills 🤹</h1>
+        <div id="skills" className="skills ">
+          <h1 className="accent-line"> Skills 🤹</h1>
           <div className="language">
             <p>Language :    <br />
 

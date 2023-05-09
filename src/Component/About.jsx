@@ -5,6 +5,9 @@ import scsslogo from "../Component/scss.png";
 import bootstraplogo from "../Component/bootstrap.png";
 import routerlogo from "../Component/react-router-mark-color.png";
 import reduxlogo from "../Component/redux.png";
+const color = {
+  color:"#146c94"
+}
 
 function About() {
   return (
@@ -13,15 +16,15 @@ function About() {
         <div className="container1">
           <p>
             Hi There 🙋‍♂️,
-            <br /> <br /> Myself Vijay Hope your are doing well ❕ <br />I am a
+            <br /> <br /> Myself  <span style={color}>Vijay</span>  Hope your are doing well ❕ <br />I am a
             passionate web developer with over 1.9 years of  experience in{" "}
-            <strong>
+            <span style={color}>
               Web Development <span>Environment</span>{" "}
-            </strong>
+            </span>
             Along with having a good understanding of the development cycle for
             building a scalable application. <br />
-          <a href="#skills" >
-            I am holding below skills 
+          <a href="#skills" > <br />
+            I am holding below skills <sup>🎯</sup>
           </a>
           <br />
             <br />

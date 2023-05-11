@@ -42,17 +42,23 @@ function About() {
 
           </a> */}
 <div className="exp" id="exp">
-    <div>
+  
         <h1 className="accent-line">Work 🏢</h1>
+
         <div className="experience">
+          <div className="two">
             <h5>Implementation & Conversion Analyst -- Front-end Developer 👨 <br />  Jan/2022  -  Present</h5> 
+
+          </div>
             <h5>⬆️</h5>
             <h5>⬆️</h5>
+          <div className="one">
             <h5>IT Trainee 👦 <br /> Aug/2021 - Aug/2022</h5>
+          </div>
             
 
         </div>
-    </div>
+    
 </div>
 
         <div id="skills" className="skills ">
@@ -98,7 +104,7 @@ function About() {
             </p>
           </div>
         </div>
-        {/* <p>
+        <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
           debitis architecto tempora illo voluptatibus voluptates cupiditate
           laudantium. Voluptate optio eius pariatur provident iure
@@ -112,7 +118,7 @@ function About() {
           excepturi inventore in voluptas dicta, harum veniam commodi
           accusantium nesciunt. Ab omnis nesciunt sapiente ducimus soluta
           cupiditate?
-        </p> */}
+        </p>
         {/* <div id='para' className="para">
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error inventore accusantium exercitationem cumque est non veritatis animi. Odit neque dolorem modi quia nesciunt maxime eum assumenda recusandae voluptates. Cum eos accusantium incidunt omnis rerum iste assumenda excepturi eveniet facilis quas suscipit exercitationem, accusamus aliquam doloribus id laudantium amet commodi fugit sequi sed, labore illo deserunt ipsa enim? Voluptatibus eius officiis velit tenetur! Laboriosam dolore atque saepe molestiae debitis voluptas ex, reiciendis architecto corporis tempora quisquam quis odit expedita! Illum, quod labore voluptate consectetur quisquam ipsam ex ab est eum eos id? Ullam saepe quo labore recusandae omnis, unde quaerat impedit.</p>

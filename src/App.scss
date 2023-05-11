@@ -40,10 +40,10 @@
 body {
   // font-family: 'Josefin Sans', sans-serif;
   font-family: "Josefin Sans", sans-serif;
-  color: black;
+  color: #202124;
 
   /* Color Variables */
-  --one: #f6f1f1;
+  --one: #ffff;
   --two: #afd3e2;
   --three: #19a7ce;
   --four: #146c94;
@@ -124,10 +124,18 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw; // font-size: 20px;
+    
     // display: flex;
     // margin-top: 100px;
     // flex-direction: column ;
     P{
+      background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px;
       text-align: center;
     }
     h1 {
@@ -172,6 +180,7 @@ body {
       background-position: 50% 100%;
       background-size: contain;
       background-repeat: no-repeat;
+      
     }
     h1 {
       text-align: center;

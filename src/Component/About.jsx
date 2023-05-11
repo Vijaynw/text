@@ -42,17 +42,23 @@ function About() {
 
           </a> */}
 <div className="exp" id="exp">
-    <div>
+  
         <h1 className="accent-line">Work 🏢</h1>
+
         <div className="experience">
+          <div className="two">
             <h5>Implementation & Conversion Analyst -- Front-end Developer 👨 <br />  Jan/2022  -  Present</h5> 
+
+          </div>
             <h5>⬆️</h5>
             <h5>⬆️</h5>
+          <div className="one">
             <h5>IT Trainee 👦 <br /> Aug/2021 - Aug/2022</h5>
+          </div>
             
 
         </div>
-    </div>
+    
 </div>
 
         <div id="skills" className="skills ">

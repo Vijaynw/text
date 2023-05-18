@@ -40,10 +40,10 @@
 body {
   // font-family: 'Josefin Sans', sans-serif;
   font-family: "Josefin Sans", sans-serif;
-  color: #202124;
+  color: black;
 
   /* Color Variables */
-  --one: #ffff;
+  --one: #f6f1f1;
   --two: #afd3e2;
   --three: #19a7ce;
   --four: #146c94;
@@ -124,17 +124,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw; // font-size: 20px;
-    
     // display: flex;
     // margin-top: 100px;
     // flex-direction: column ;
     P{
-      background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
       text-align: center;
     }
     h1 {
@@ -254,7 +247,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 415px) {
   .about {
     display: flex;
     flex-direction: column;
@@ -306,8 +299,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       // display: flex;
       margin-top: 100px;
       // flex-direction: column ;
-      p{
+      *p{
         text-align: center;
+        background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
       }
       h1 {
         text-align: center;
@@ -359,5 +358,50 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       }
     }
   }
+
+  .contact {
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    color: #146c94;
+    height: 80vh;
+    
+    border: 1px solid red;
+    align-items: center;
+    h1{
+      
+    }
+    a {
+      // padding: ;
+      width:100px;
+      height: 50px;
+      text-align: center;
+      margin-top: 10px;
+      // padding: 10px;
+      justify-content: center;
+      align-items: center;
+      background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(#146c94, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      display: flex;
+      flex-direction: row;
+  
+      text-decoration: none;
+    }
+  }
+
+  .footer {
+    width: 100vw;
+  
+    position: absolute;
+    // border: 1px solid red;
+    text-align: start;
+    // margin-left: 10px;
+
+  }
+  
 
 }

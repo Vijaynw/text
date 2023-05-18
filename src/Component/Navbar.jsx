@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
+
 function Navbar() {
   return (
     <>
@@ -8,20 +10,20 @@ function Navbar() {
     <nav className='nav'>
     <Link to='home'>
        <li>
-        🏠Home
+        Home
         </li> 
         </Link>
     <Link to='about'>
 
-        <li>🔎About</li>
+        <li>About</li>
     </Link>
     <Link to='contact'>
 
-        <li>🤔Contact</li>
+        <li>Contact</li>
     </Link>
     <a href="https://drive.google.com/file/d/162MZt3QjBPz7XVczghNLNOQc1-3rI5Gp/view?usp=share_link" target="_blank">
 
-        <li>📃Resume</li>
+        <li>Resume</li>
     </a>
   
        

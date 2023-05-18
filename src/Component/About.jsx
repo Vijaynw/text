@@ -17,7 +17,7 @@ function About() {
       <div  id="top" className="about">
         <div className="container1">
           <p>
-            Hi There 🙋‍♂️,
+            Hi There ,
             <br /> <br /> Myself  <span style={color}>Vijay</span>  Hope your are doing well ❕ <br />I am a
             passionate web developer with over 1.9 years of  experience in{" "}
             <span style={color}>
@@ -31,7 +31,7 @@ function About() {
           <br />
             <br />
             Thanks, <br />
-            Vijay 😊
+            Vijay.
           </p>
 
           {/* <button type="button" class="btn btn-primary">Primary</button> */}
@@ -47,13 +47,13 @@ function About() {
 
         <div className="experience">
           <div className="two">
-            <h5>Implementation & Conversion Analyst -- Front-end Developer 👨 <br />  Jan/2022  -  Present</h5> 
+            <p>Implementation & Conversion Analyst - Front-end Developer <br /> <br /> Jan/2022  -  Present</p> 
 
           </div>
-            <h5>⬆️</h5>
-            <h5>⬆️</h5>
+            <h5>|</h5>
+            <h5>|</h5>
           <div className="one">
-            <h5>IT Trainee 👦 <br /> Aug/2021 - Aug/2022</h5>
+            <p> IT Trainee  <br /> <br /> Aug/2021 - Aug/2022</p>
           </div>
             
 
@@ -103,22 +103,10 @@ function About() {
               <img src={reactlogo} alt="" />
             </p>
           </div>
-        </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
-          debitis architecto tempora illo voluptatibus voluptates cupiditate
-          laudantium. Voluptate optio eius pariatur provident iure
-          necessitatibus delectus quam voluptas neque dolorum quisquam nostrum
-          modi voluptates, eaque animi aspernatur exercitationem repudiandae!
-          Aliquam accusantium perferendis commodi, eos itaque a, culpa dolorum
-          asperiores voluptas id ratione optio cupiditate porro atque placeat
-          cumque sequi, voluptatem dolor sapiente! Voluptate officia veniam
-          accusantium blanditiis sit odit, voluptatem animi corporis tenetur
-          enim vero ipsum ducimus, magni aut ratione? Alias laboriosam quis sunt
-          excepturi inventore in voluptas dicta, harum veniam commodi
-          accusantium nesciunt. Ab omnis nesciunt sapiente ducimus soluta
-          cupiditate?
+          In progress :
         </p>
+        </div>
         {/* <div id='para' className="para">
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error inventore accusantium exercitationem cumque est non veritatis animi. Odit neque dolorem modi quia nesciunt maxime eum assumenda recusandae voluptates. Cum eos accusantium incidunt omnis rerum iste assumenda excepturi eveniet facilis quas suscipit exercitationem, accusamus aliquam doloribus id laudantium amet commodi fugit sequi sed, labore illo deserunt ipsa enim? Voluptatibus eius officiis velit tenetur! Laboriosam dolore atque saepe molestiae debitis voluptas ex, reiciendis architecto corporis tempora quisquam quis odit expedita! Illum, quod labore voluptate consectetur quisquam ipsam ex ab est eum eos id? Ullam saepe quo labore recusandae omnis, unde quaerat impedit.</p>

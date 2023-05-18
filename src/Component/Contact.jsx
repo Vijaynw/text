@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
     <div className="contact ">
-      <h1 className='accent-line'>Contact Me 🤗 </h1>
+      <h1 className='accent-line'>Contact Me  </h1>
       <iframe  src="https://giphy.com/embed/qofG1bKJK0OWOK8OHe" ></iframe>
 
         <a href="mailto:vijawaghmare713@gmail.com" target="_blank">

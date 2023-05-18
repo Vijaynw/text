@@ -56,8 +56,11 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  position: fixed;width: 100vw;
+
+  backdrop-filter: blur(2px);
   padding: 10px;
   .logo {
     left: 0;
@@ -65,11 +68,13 @@ body {
   a {
     text-decoration: none;
     cursor: all-scroll;
+    
 
     li {
       font-size: 25px;
       list-style: none;
       cursor: pointer;
+      margin-right: 20px;
 
       &:hover {
         // font-size: 50px;
@@ -82,6 +87,17 @@ body {
 .about {
   display: flex;
   flex-direction: column;
+
+  iframe{
+    width: 100px;
+    height: 100px;
+    &:hover{
+      cursor: none !important;
+    }
+  }
+  h5{
+    text-align: center;
+  }
   
 //  padding: 10px;
   // margin-left: 10px;
@@ -224,6 +240,7 @@ body {
   }
   button {
     border-radius: 25px;
+    border: none;
     a {
       text-decoration: none;
     }
@@ -234,13 +251,15 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 50vh;
+  height: 100vh;
   align-items: center;
+  
+
   a {
     // padding: ;
     display: flex;
     flex-direction: row;
-
+margin-top: 20px;
     text-decoration: none;
   }
 }

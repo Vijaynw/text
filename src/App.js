@@ -12,19 +12,8 @@ const year=date.getFullYear()
 function App() {
   return (
     <>
-      {/* <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='about' element={<About/>}></Route>
-        <Route path='contact' element={<Contact/>}></Route>
-        <Route path='resume' element={<Resume/>}></Route>
-        <Route path='*' element={<Home/>}></Route>
-      </Routes> */}
-     {/* <h1>Hello </h1> */}
-     {/* <Footer year={year}/> */}
-      
       <Home />
-     <Footer year={year}/>
+     {/* <Footer year={year}/> */}
     </>
   );
 }

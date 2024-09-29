@@ -6,21 +6,21 @@ function Navbar() {
 
   const links = () => {
     return (
-      <ul className="flex ">
+      <ul className="flex py-4 justify-between md:flex md:justify-normal">
         <Link to="home">
-          <li className="m-10">Home</li>
+          <li className="md:mx-10">Home</li>
         </Link>
-        <Link to="about">
-          <li className="m-10">About</li>
+        <Link to="about" id="#explore">
+          <li className="md:mx-10">About</li>
         </Link>
         <Link to="contact">
-          <li className="m-10">Contact</li>
+          <li className="md:mx-10">Contact</li>
         </Link>
         <a
           href="https://drive.google.com/file/d/162MZt3QjBPz7XVczghNLNOQc1-3rI5Gp/view?usp=share_link"
           target="_blank"
           rel="noreferrer"
-          className="m-10"
+          className="md:mx-10"
         >Resume
         </a>
       </ul>
@@ -29,7 +29,6 @@ function Navbar() {
   return (
     <div className="text-[20px] px-10">
       {links()}
-      <hr />
     </div>
   );
 }

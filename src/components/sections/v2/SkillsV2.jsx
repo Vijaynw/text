@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Palette, Database, Wrench, Zap, TrendingUp } from 'lucide-react';
+import { Code, Palette, Database, Wrench, TrendingUp } from 'lucide-react';
 
 const SkillsV2 = () => {
   const [activeCategory, setActiveCategory] = useState(0);

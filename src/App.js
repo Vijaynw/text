@@ -10,12 +10,12 @@ import ContactV2 from './components/sections/v2/ContactV2';
 function App() {
   return (
     <Layout>
-      <HeroV2 />
-      <AboutV2 />
-      <ExperienceV2 />
-      <SkillsV2 />
-      <ProjectsV2 />
-      <ContactV2 />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects/>
+      <Contact/>
     </Layout>
   );
 }

@@ -1,12 +1,20 @@
-// import logo from './logo.svg';
-import * as React from "react";
-import Home from "./Component/Home";
+import React from 'react';
+import Layout from './components/layout/Layout';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Experience from './components/sections/Experience';
+import Skills from './components/sections/Skills';
+import Contact from './components/sections/Contact';
 
 function App() {
   return (
-    <> 
-      <Home />
-    </>
+    <Layout>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Contact />
+    </Layout>
   );
 }
 

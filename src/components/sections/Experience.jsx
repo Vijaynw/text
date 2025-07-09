@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       company: 'Qualys',
-      position: 'Implementation & Conversion Analyst - Frontend Developer',
+      position: 'Frontend',
       duration: 'Jan 2022 - Present',
       location: 'India',
       description: [

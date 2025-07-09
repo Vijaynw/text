@@ -5,14 +5,15 @@ const Experience = () => {
   const experiences = [
     {
       company: 'Qualys',
-      position: 'Implementation & Conversion Analyst - Front-end Developer',
+      position: 'Implementation & Conversion Analyst - Frontend Developer',
       duration: 'Jan 2022 - Present',
       location: 'India',
       description: [
-        'Developing and maintaining web applications using React.js',
-        'Converting designs into responsive, interactive user interfaces',
-        'Collaborating with cross-functional teams to deliver high-quality solutions',
-        'Implementing modern frontend technologies and best practices'
+        'Developing and maintaining web applications using React.js and modern frontend technologies',
+        'Converting client requirements and designs into responsive, interactive user interfaces',
+        'Implementing data conversion and migration solutions for enterprise clients',
+        'Collaborating with cross-functional teams to deliver scalable frontend solutions',
+        'Working on implementation projects to help clients integrate Qualys security solutions'
       ],
       current: true
     },

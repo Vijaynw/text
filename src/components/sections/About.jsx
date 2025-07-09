@@ -51,7 +51,7 @@ const About = () => {
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Currently working as an Implementation & Conversion Analyst - 
-                  Front-end Developer, where I transform ideas into beautiful, 
+                  Frontend Developer at Qualys, where I transform ideas into beautiful, 
                   functional web experiences.
                 </p>
               </div>

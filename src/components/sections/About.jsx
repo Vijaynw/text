@@ -50,8 +50,7 @@ const About = () => {
                   Current Focus
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Currently working as an Implementation & Conversion Analyst - 
-                  Frontend Developer at Qualys, where I transform ideas into beautiful, 
+                  Currently working as a Frontend Engineer at Qualys, where I transform ideas into beautiful, 
                   functional web experiences.
                 </p>
               </div>

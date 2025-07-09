@@ -1,11 +1,10 @@
 import React from 'react';
 import Layout from './components/layout/Layout';
-import HeroV2 from './components/sections/v2/HeroV2';
-import AboutV2 from './components/sections/v2/AboutV2';
-import ExperienceV2 from './components/sections/v2/ExperienceV2';
-import SkillsV2 from './components/sections/v2/SkillsV2';
-import ProjectsV2 from './components/sections/v2/ProjectsV2';
-import ContactV2 from './components/sections/v2/ContactV2';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Experience from './components/sections/Experience';
+import Skills from './components/sections/Skills';
+import Contact from './components/sections/Contact';
 
 function App() {
   return (
@@ -14,8 +13,7 @@ function App() {
       <About />
       <Experience />
       <Skills />
-      <Projects/>
-      <Contact/>
+      <Contact />
     </Layout>
   );
 }

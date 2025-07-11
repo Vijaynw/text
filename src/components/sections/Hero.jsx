@@ -182,16 +182,3 @@ const Hero = () => {
 };
 
 export default Hero;
-            onClick={scrollToAbout}
-            className="inline-flex items-center space-x-2 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
-          >
-            <span>Explore My Work</span>
-            <ArrowDown size={20} />
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;

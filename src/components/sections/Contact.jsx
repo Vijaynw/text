@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Linkedin, Github, Send, MapPin } from 'lucide-react';
+import { motion } from 'framer-motion';
+import Button from '../ui/Button';
+import GlowCard from '../ui/GlowCard';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -53,10 +56,31 @@ const Contact = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Get In Touch 📫
           </h2>
@@ -65,12 +89,18 @@ const Contact = () => {
             I'm always open to discussing new opportunities, interesting projects, 
             or just having a friendly chat about technology!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <motion.div 
+          className="grid lg:grid-cols-2 gap-12"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
+          <motion.div className="space-y-8" variants={itemVariants}>
+            <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Let's Connect!
               </h3>
@@ -78,32 +108,39 @@ const Contact = () => {
                 Feel free to reach out through any of these channels. I typically 
                 respond within 24 hours.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="space-y-6">
+            <motion.div className="space-y-6" variants={itemVariants}>
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
                 return (
-                  <a
+                  <motion.a
                     key={index}
                     href={info.href}
                     target={info.href.startsWith('http') ? '_blank' : '_self'}
                     rel={info.href.startsWith('http') ? 'noreferrer' : ''}
-                    className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 group"
+                    className="block"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
                   >
-                    <div className={`p-3 rounded-full bg-gray-100 group-hover:bg-gray-200 transition-colors duration-200`}>
-                      <IconComponent className={`w-6 h-6 ${info.color}`} />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">{info.label}</h4>
-                      <p className="text-gray-600">{info.value}</p>
-                    </div>
-                  </a>
+                    <GlowCard className="p-4 group" glowColor="blue">
+                      <div className="flex items-center space-x-4">
+                        <div className={`p-3 rounded-full bg-gray-100 group-hover:bg-gray-200 transition-colors duration-200`}>
+                          <IconComponent className={`w-6 h-6 ${info.color}`} />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900">{info.label}</h4>
+                          <p className="text-gray-600">{info.value}</p>
+                        </div>
+                      </div>
+                    </GlowCard>
+                  </motion.a>
                 );
               })}
-            </div>
+            </motion.div>
 
-            <div className="bg-blue-50 rounded-lg p-6">
+            <motion.div variants={itemVariants}>
+              <GlowCard className="bg-blue-50 p-6" glowColor="blue">
               <div className="flex items-center space-x-3 mb-3">
                 <MapPin className="w-5 h-5 text-blue-600" />
                 <h4 className="font-semibold text-gray-900">Location</h4>
@@ -112,11 +149,13 @@ const Contact = () => {
               <p className="text-sm text-gray-500 mt-2">
                 Open to remote opportunities worldwide
               </p>
-            </div>
-          </div>
+              </GlowCard>
+            </motion.div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <motion.div variants={itemVariants}>
+            <GlowCard className="p-8" glowColor="purple">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Send me a message
             </h3>
@@ -133,7 +172,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-400"
                   placeholder="Enter your name"
                 />
               </div>
@@ -149,7 +188,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-blue-400"
                   placeholder="Enter your email"
                 />
               </div>
@@ -165,21 +204,24 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none hover:border-blue-400"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>
 
-              <button
+              <Button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2 font-medium"
+                variant="gradient"
+                size="lg"
+                className="w-full"
               >
                 <Send size={20} />
                 <span>Send Message</span>
-              </button>
+              </Button>
             </form>
-          </div>
-        </div>
+            </GlowCard>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

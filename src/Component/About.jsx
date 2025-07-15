@@ -1,118 +1,130 @@
-import React from "react";
-import reactlogo from "../Component/pngwing.com.png";
-import htmllogo from "../Component/html.png";
-import scsslogo from "../Component/scss.png";
-import bootstraplogo from "../Component/bootstrap.png";
-import routerlogo from "../Component/react-router-mark-color.png";
-import reduxlogo from "../Component/redux.png";
-import sql from "../Component/sql.png";
-
-const color = {
-  color:"#146c94"
-}
+import React from 'react';
+import { motion } from 'framer-motion';
 
 function About() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  };
+
   return (
-    <>
-      <div  id="top" className="about">
-        <div className="container1">
-          <p>
-            Hi There ,
-            <br /> <br /> Myself  <span style={color}>Vijay</span>  Hope your are doing well ❕ <br />I am a
-            passionate web developer with over 1.9 years of  experience in{" "}
-            <span style={color}>
-              Web Development <span>Environment</span>{" "}
-            </span>
-            Along with having a good understanding of the development cycle for
-            building a scalable application. <br />
-          <a href="#skills" > 
-            I am holding below skills <sup>🎯</sup>
-          </a>
-          <br />
-            <br />
-            Thanks, <br />
-            Vijay.
-          </p>
-
-          {/* <button type="button" class="btn btn-primary">Primary</button> */}
-          {/* <button>Explore</button> */}
-        </div>
-          {/* <a href="#top">
-            <button>Top</button>
-
-          </a> */}
-<div className="exp" id="exp">
-  
-        <h1 className="accent-line">Work 🏢</h1>
-
-        <div className="experience">
-          <div className="two">
-            <p>Implementation & Conversion Analyst - Front-end Developer <br /> <br /> Jan/2022  -  Present</p> 
-
-          </div>
-            <h5>|</h5>
-            <h5>|</h5>
-          <div className="one">
-            <p> IT Trainee  <br /> <br /> Aug/2021 - Aug/2022</p>
-          </div>
-            
-
-        </div>
-    
-</div>
-
-        <div id="skills" className="skills ">
-          <h1 className="accent-line"> Skills 🤹</h1>
-          <div className="language">
-            <p>Language :    <br />
-
-            <img src={htmllogo} alt="" />
-            </p>
-          </div>
-
-          <div className="framework">
-            <p>
-              Frameworks :    <br />
-              <img src={reactlogo} alt="" />
-            </p>
-          </div>
-
-          <div className="Libraries">
-            <p>
-              Libraries :   <br />
-              <img src={scsslogo} alt="" />
-              <img src={bootstraplogo} alt="" />
-              <img src={reduxlogo} alt="" />
-              <img src={routerlogo} alt="" />
-            </p>
-          </div>
-
-          <div className="Databases">
-            <p>
-              Databases :  <br />
-              <img src={sql} alt="" />
-            </p>
-          </div>
-
-          <div className="Dev_Tools ">
-            <p>
-              Dev Tools : <br />
-              <img src={reactlogo} alt="" />
-              <img src={reactlogo} alt="" />
-              <img src={reactlogo} alt="" />
-              <img src={reactlogo} alt="" />
-            </p>
-          </div>
-        <p>
-          In progress :
+    <motion.div 
+      className="about"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.div className="about-header" variants={itemVariants}>
+        <h1>About Me</h1>
+        <p className="subtitle">
+          Passionate about creating meaningful digital experiences
         </p>
-        </div>
-        {/* <div id='para' className="para">
+      </motion.div>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error inventore accusantium exercitationem cumque est non veritatis animi. Odit neque dolorem modi quia nesciunt maxime eum assumenda recusandae voluptates. Cum eos accusantium incidunt omnis rerum iste assumenda excepturi eveniet facilis quas suscipit exercitationem, accusamus aliquam doloribus id laudantium amet commodi fugit sequi sed, labore illo deserunt ipsa enim? Voluptatibus eius officiis velit tenetur! Laboriosam dolore atque saepe molestiae debitis voluptas ex, reiciendis architecto corporis tempora quisquam quis odit expedita! Illum, quod labore voluptate consectetur quisquam ipsam ex ab est eum eos id? Ullam saepe quo labore recusandae omnis, unde quaerat impedit.</p>
-        </div> */}
-      </div>
-    </>
+      <motion.div className="about-content" variants={itemVariants}>
+        <div className="about-text">
+          <p>
+            Hi there! I'm <span className="highlight">Vijay Waghmare</span>, 
+            a passionate web developer with over 1.9 years of experience in 
+            the web development environment. I specialize in building scalable, 
+            user-friendly applications that solve real-world problems.
+          </p>
+          <p>
+            My journey in web development started with a curiosity about how 
+            things work on the internet. Since then, I've been constantly 
+            learning and adapting to new technologies, always striving to 
+            write clean, efficient code that makes a difference.
+          </p>
+          <p>
+            I believe in the power of good design and user experience. 
+            Every project I work on is an opportunity to create something 
+            that not only functions well but also delights users.
+          </p>
+        </div>
+
+        <div className="about-stats">
+          <div className="stat-item">
+            <div className="stat-number">1.9+</div>
+            <div className="stat-label">Years Experience</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">15+</div>
+            <div className="stat-label">Projects Completed</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">100%</div>
+            <div className="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div className="skills-section" variants={itemVariants}>
+        <h2>Skills & Technologies</h2>
+        <div className="skills-grid">
+          <div className="skill-category">
+            <h3>Frontend</h3>
+            <ul className="skill-list">
+              <li>React.js</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5 & CSS3</li>
+              <li>SCSS/Sass</li>
+              <li>Bootstrap</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h3>Libraries & Frameworks</h3>
+            <ul className="skill-list">
+              <li>React Router</li>
+              <li>Redux</li>
+              <li>Framer Motion</li>
+              <li>Axios</li>
+              <li>Material-UI</li>
+              <li>Lucide React</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h3>Tools & Technologies</h3>
+            <ul className="skill-list">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>npm/yarn</li>
+              <li>Chrome DevTools</li>
+              <li>Figma</li>
+              <li>SQL Databases</li>
+            </ul>
+          </div>
+
+          <div className="skill-category">
+            <h3>Currently Learning</h3>
+            <ul className="skill-list">
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+              <li>GraphQL</li>
+              <li>Docker</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

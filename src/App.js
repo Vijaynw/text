@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar';
 import Home from './Component/Home';
 import About from './Component/About';
+import Work from './Component/Work';
 import Contact from './Component/Contact';
-import Gallery from './Component/Gallery';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/work' element={<Work />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Home />} />
         </Routes>
